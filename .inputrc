@@ -1,1 +1,9 @@
+# Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
+
+# Immediately add a trailing slash when autocompleting symlinks to directories
+set mark-symlinked-directories on
+
+# Show extra file information when completing, like `ls -F` does
+set visible-stats on
+

@@ -1,0 +1,9 @@
+[user]
+	name = Jeff Harrell
+	email = jeff@juxtadesign.com
+[merge]
+	tool = opendiff
+[diff]
+	tool = opendiff
+[core]
+	editor = sublime -n -w
