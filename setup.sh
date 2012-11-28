@@ -6,7 +6,7 @@ read -p "This may overwrite files in your home directory. Are you sure? (y/n) " 
 
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-	for file in `ls -A | grep -v -e README.md -e setup.sh -e .git$`; do
+	for file in `ls -A | grep -v -e README.md -e setup.sh -e .git$ -e .gitignore`; do
 		ln -fs "$PWD/$file" "$HOME/$file";
 		echo "$PWD/$file -> $HOME/$file";
 	done
