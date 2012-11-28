@@ -1,0 +1,3 @@
+/*jshint browser: true, es5: true, onevar: true, undef: true, laxgetset:false */
+
+/*global YAHOO, $, jQuery */
