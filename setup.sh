@@ -13,4 +13,4 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 
-source "$HOME/.profile"
+source "$HOME/.bash_profile"
