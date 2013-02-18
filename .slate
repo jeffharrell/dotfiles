@@ -1,0 +1,29 @@
+# Slate config - https://github.com/jigish/slate
+
+config defaultToCurrentScreen true
+config layoutFocusOnActivate true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsFontColor "255;0;255;1.0"
+config windowHintsBackgroundColor "0;0;0;0"
+
+# Aliases
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias toptwothirds push up bar-resize:screenSizeY*0.7
+alias bottomthird push down bar-resize:screenSizeY*0.3
+
+# Layouts
+layout editors 'Terminal' ${bottomthird}
+layout editors 'Sublime Text 2' ${toptwothirds}
+
+# Location bindings
+bind 1:ctrl ${full}
+bind 2:ctrl layout editors
+bind 3:ctrl ${lefthalf}
+bind 4:ctrl ${righthalf}
+
+# Hinting
+bind esc:ctrl hint ASDFGHJKLQWERTYUIOPCVBN
