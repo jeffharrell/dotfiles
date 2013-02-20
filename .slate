@@ -5,8 +5,13 @@ config layoutFocusOnActivate true
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
-config windowHintsFontColor "255;0;255;1.0"
+config windowHintsFontColor "255;255;255;1.0"
 config windowHintsBackgroundColor "0;0;0;0"
+#config gridBackgroundColor "75;77;81;0.9"
+#config gridCellBackgroundColor "100;106;116;0.8"
+#config gridCellSelectedColor "50;53;58;0.8"
+config gridRoundedCornerSize 4
+config gridCellRoundedCornerSize 4
 
 # Aliases
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -20,7 +25,7 @@ layout editors 'Terminal':REPEAT ${bottomthird}
 layout editors 'Sublime Text 2':REPEAT ${toptwothirds}
 
 # Location bindings
-bind 1:ctrl grid padding:5 0:6,6
+bind 1:ctrl grid padding:6 0:6,6
 bind 2:ctrl ${full}
 bind 3:ctrl ${lefthalf}
 bind 4:ctrl ${righthalf}
