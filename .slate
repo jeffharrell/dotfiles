@@ -16,14 +16,15 @@ alias toptwothirds push up bar-resize:screenSizeY*0.7
 alias bottomthird push down bar-resize:screenSizeY*0.3
 
 # Layouts
-layout editors 'Terminal' ${bottomthird}
-layout editors 'Sublime Text 2' ${toptwothirds}
+layout editors 'Terminal':REPEAT ${bottomthird}
+layout editors 'Sublime Text 2':REPEAT ${toptwothirds}
 
 # Location bindings
-bind 1:ctrl ${full}
-bind 2:ctrl layout editors
+bind 1:ctrl grid padding:5 0:6,6
+bind 2:ctrl ${full}
 bind 3:ctrl ${lefthalf}
 bind 4:ctrl ${righthalf}
+bind 0:ctrl layout editors
 
 # Hinting
 bind esc:ctrl hint ASDFGHJKLQWERTYUIOPCVBN
