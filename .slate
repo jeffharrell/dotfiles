@@ -19,17 +19,26 @@ alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
 alias toptwothirds push up bar-resize:screenSizeY*0.7
 alias bottomthird push down bar-resize:screenSizeY*0.3
+alias toprightcorner corner top-right resize:screenSizeX/2;screenSizeY*0.7
+alias bottomrightcorner corner bottom-right resize:screenSizeX/2;screenSizeY*0.3
+
+
 
 # Layouts
-layout editors 'Terminal':REPEAT ${bottomthird}
-layout editors 'Sublime Text 2':REPEAT ${toptwothirds}
+layout layout1 'Google Chrome' ${lefthalf}
+layout layout1 'Terminal' ${bottomrightcorner}
+layout layout1 'Sublime Text 2' ${toprightcorner}
+
+layout layout2 'Terminal' ${bottomthird}
+layout layout2 'Sublime Text 2' ${toptwothirds}
 
 # Location bindings
 bind 1:ctrl grid padding:6 0:6,6
 bind 2:ctrl ${full}
 bind 3:ctrl ${lefthalf}
 bind 4:ctrl ${righthalf}
-bind 0:ctrl layout editors
+bind 9:ctrl layout layout1
+bind 0:ctrl layout layout2
 
 # Hinting
 bind esc:ctrl hint ASDFGHJKLQWERTYUIOPCVBN

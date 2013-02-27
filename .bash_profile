@@ -15,6 +15,5 @@ export LSCOLORS=gxGxcxdxbxegedabagacad
 export EDITOR=vim
 
 # Paths
-export PHP_PEAR_PHP_BIN=/opt/local/bin/php
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/share/npm/bin/:/usr/local/bin:$PATH
 
