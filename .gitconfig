@@ -1,6 +1,8 @@
 [user]
 	name = Jeff Harrell
 	email = jeff@juxtadesign.com
+[color]
+	ui = true
 [merge]
 	tool = opendiff
 [diff]
