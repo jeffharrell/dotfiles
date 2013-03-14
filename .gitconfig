@@ -7,3 +7,5 @@
 	tool = opendiff
 [core]
 	editor = sublime -n -w
+[push]
+	default = simple
