@@ -10,4 +10,4 @@
 [core]
 	editor = sublime -n -w
 [push]
-	default = simple
+	default = current
