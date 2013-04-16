@@ -1,6 +1,3 @@
-[user]
-	name = Jeff Harrell
-	email = jeff@juxtadesign.com
 [color]
 	ui = true
 [merge]
@@ -11,3 +8,5 @@
 	editor = sublime -n -w
 [push]
 	default = current
+[include]
+	path = .gitconfig.user
