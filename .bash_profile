@@ -36,5 +36,5 @@ export LSCOLORS=gxGxcxdxbxegedabagacad
 export EDITOR=vim
 
 # Paths
-export PATH=/usr/local/share/npm/bin/:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 

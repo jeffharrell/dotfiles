@@ -13,6 +13,7 @@ config windowHintsBackgroundColor "0;0;0;0"
 config gridRoundedCornerSize 4
 config gridCellRoundedCornerSize 4
 
+
 # Aliases
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
@@ -23,14 +24,14 @@ alias toprightcorner corner top-right resize:screenSizeX/2;screenSizeY*0.7
 alias bottomrightcorner corner bottom-right resize:screenSizeX/2;screenSizeY*0.3
 
 
-
 # Layouts
-layout layout1 'Google Chrome' ${lefthalf}
-layout layout1 'Terminal' ${bottomrightcorner}
-layout layout1 'Sublime Text 2' ${toprightcorner}
+layout layout1 'Google Chrome':REPEAT,IGNORE_FAIL ${lefthalf}
+layout layout1 'Terminal':REPEAT ${bottomrightcorner}
+layout layout1 'Sublime Text 2':REPEAT ${toprightcorner}
 
-layout layout2 'Terminal' ${bottomthird}
-layout layout2 'Sublime Text 2' ${toptwothirds}
+layout layout2 'Terminal':REPEAT ${bottomthird}
+layout layout2 'Sublime Text 2':REPEAT ${toptwothirds}
+
 
 # Location bindings
 bind 1:ctrl grid padding:6 0:6,6
@@ -39,6 +40,7 @@ bind 3:ctrl ${lefthalf}
 bind 4:ctrl ${righthalf}
 bind 9:ctrl layout layout1
 bind 0:ctrl layout layout2
+
 
 # Hinting
 bind esc:ctrl hint ASDFGHJKLQWERTYUIOPCVBN
