@@ -38,3 +38,5 @@ export EDITOR=vim
 # Paths
 export PATH=$HOME/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH
 
+
+[[ -s /Users/jeff/.nvm/nvm.sh ]] && . /Users/jeff/.nvm/nvm.sh # This loads NVM

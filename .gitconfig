@@ -5,7 +5,7 @@
 [diff]
 	tool = opendiff
 [core]
-	editor = sublime -n -w
+	editor = vim 
 [push]
 	default = current
 [include]
