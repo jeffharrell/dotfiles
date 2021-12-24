@@ -12,7 +12,8 @@ alias h='history'
 alias vi='vim'
 
 # Prompt
-PROMPT="%F{green}%n@%m %F{blue}%~ %f%# "
+PROMPT="%F{green}%m %F{cyan}%~ %f%#
+$ "
 
 # Directory colors
 export CLICOLOR=true
