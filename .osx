@@ -1,8 +1,0 @@
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
-# Disable shadow in screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
-
-# Enable Safari’s debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
